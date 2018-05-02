@@ -1,4 +1,4 @@
-<p align="middle"><img src='https://i.imgur.com/HfAUyKJ.png' /></p>  
+<p align="middle"><img src='https://i.imgur.com/diK2aT7.png' /></p>  
 
 # CSRF Probe
 CSRF Probe is a advanced scanner for hunting down Cross Site Request Forgery bugs in web applications.
