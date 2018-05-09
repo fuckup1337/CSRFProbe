@@ -1,18 +1,19 @@
 #!/usr/bin/env python2
-#-*- coding: utf-8 -*-
+#coding: utf-8
 
-#-:-:-:-:-:-:-:-:-:-:-:-:#
-#    TIDoS Framework     #
-#-:-:-:-:-:-:-:-:-:-:-:-:#
+#-:-:-:-:-:-:-::-:-:#
+#    CSRF Probe     #
+#-:-:-:-:-:-:-::-:-:#
 
 #Author: the-Infected-Drake (@_tID)
-#This module requires TIDoS Framework
-#https://github.com/the-Infected-Drake/TIDoS-Framework 
+#This module requires CSRFProbe
+#https://github.com/the-Infected-Drake/CSRFProbe
 
 import urllib2
 from BeautifulSoup import BeautifulSoup
 import Uri_Checker
 import re
+import removeIDs
 from colors import *
 
 class Crawler_Handler():
@@ -68,11 +69,11 @@ class Crawler_Handler():
 		response = query.read()
 
 		try:
-			print O+' [*] Trying to parse response...'
+			print GR+' [*] Trying to parse response...'
 			soup = BeautifulSoup(response)
 
 		except HTMLParser.HTMLParseError:
-			print R+' [-] BeautifulSoup Error: '+url
+			print R+' [-] BeautifulSoup Error at : '+url
 			self.visited.append(url)
 
 			if url in self.toVisit:
@@ -120,3 +121,4 @@ def removeIDs(Uri_Checker):
 	p = re.compile('(title=)[^&]*')
 	Uri_Checker = p.sub('\\1',Uri_Checker)
 	return Uri_Checker
+
