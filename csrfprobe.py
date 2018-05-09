@@ -1,13 +1,13 @@
 #!/usr/bin/env python2
-#-*- coding: utf-8 -*-
+#coding: utf-8
 
-#-:-:-:-:-:-:-:-:-:-:-:-:#
-#    TIDoS Framework     #
-#-:-:-:-:-:-:-:-:-:-:-:-:#
+#-:-:-:-:-:-:-::-:-:#
+#    CSRF Probe     #
+#-:-:-:-:-:-:-::-:-:#
 
 #Author: the-Infected-Drake (@_tID)
-#This module requires TIDoS Framework
-#https://github.com/the-Infected-Drake/TIDoS-Framework 
+#This module requires CSRFProbe
+#https://github.com/the-Infected-Drake/CSRFProbe
 
 import sys
 sys.path.append('core/')
@@ -15,5 +15,3 @@ from impo import *
 from globalvars import *
 
 csrf_main()
-
-

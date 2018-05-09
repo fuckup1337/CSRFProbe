@@ -14,7 +14,7 @@ The typical flow of this scanner is :-
 - Finds out if the tokens are sufficiently protected.
 - Generates custom proof of concepts after each successful bug hunt.
 
-<img src="https://i.imgur.com/Qd4mSqm.png" />
+<img src="https://i.imgur.com/ct1uD75.png" />
 
 #### Features:
 
@@ -30,9 +30,6 @@ The typical flow of this scanner is :-
 - [x] Everything is automated on demand.
 
 <img src="https://i.imgur.com/aLD1GDD.png" />
-
-#### Version:
-v1.1.0
 
 #### Warnings:
 Do not use this tool on a live site!
@@ -51,6 +48,8 @@ The scanner has the following drawbacks presently:
 #### Requirements:
 
 - mechanize
+- urllib
+- urllib2
 - requests
 - bs4
 - lxml
@@ -90,4 +89,4 @@ https://examplesite.com
 
 > Thank you...
 
-✎ @_tID
+✎ @_tID (Team CodeSploit)
