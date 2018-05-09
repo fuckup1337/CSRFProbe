@@ -32,7 +32,7 @@ The typical flow of this scanner is :-
 <img src="https://i.imgur.com/aLD1GDD.png" />
 
 #### Version:
-v1.0.0
+v1.1.0
 
 #### Warnings:
 Do not use this tool on a live site!
