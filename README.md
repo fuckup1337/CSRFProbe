@@ -48,8 +48,8 @@ The scanner has the following drawbacks presently:
 #### Requirements:
 
 - mechanize
-- urllib
-- urllib2
+
+
 - requests
 - bs4
 - lxml
