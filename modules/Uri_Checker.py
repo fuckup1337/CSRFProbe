@@ -1,13 +1,13 @@
 #!/usr/bin/env python2
-#-*- coding: utf-8 -*-
+#coding: utf-8
 
-#-:-:-:-:-:-:-:-:-:-:-:-:#
-#    TIDoS Framework     #
-#-:-:-:-:-:-:-:-:-:-:-:-:#
+#-:-:-:-:-:-:-::-:-:#
+#    CSRF Probe     #
+#-:-:-:-:-:-:-::-:-:#
 
 #Author: the-Infected-Drake (@_tID)
-#This module requires TIDoS Framework
-#https://github.com/the-Infected-Drake/TIDoS-Framework 
+#This module requires CSRFProbe
+#https://github.com/the-Infected-Drake/CSRFProbe
 
 import urlparse
 import re
@@ -15,7 +15,7 @@ from colors import *
 
 def buildUrl(url, href):
 
-	if re.search('logout',href) or re.search('action=out',href) or re.search('action=logoff', href) or re.search('action=delete',href) or re.search('UserLogout',href) or re.search('osCsid', href) or re.search('file_manager.php',href) or href=="http://localhost":#make exclusion list
+	if re.search('logout',href) or re.search('action=out',href) or re.search('action=logoff', href) or re.search('action=delete',href) or re.search('UserLogout',href) or re.search('osCsid', href) or re.search('file_manager.php',href) or href=="http://localhost": #make exclusion list
 		return ''
 	
 	parsed = urlparse.urlsplit(href)
