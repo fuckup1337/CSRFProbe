@@ -89,4 +89,4 @@ https://examplesite.com
 
 > Thank you...
 
-✎ @_tID (Team CodeSploit)
+✎ @_tID
