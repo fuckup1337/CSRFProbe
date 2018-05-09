@@ -34,7 +34,7 @@ The typical flow of this scanner is :-
 #### Warnings:
 Do not use this tool on a live site!
 
-It is because this tool is designed to perform all kinds of form submissions automatically which can be dangerous to he site. Sometimes you may screw up your database and most probably perform a DoS on the site as well.
+It is because this tool is designed to perform all kinds of form submissions automatically which can be dangerous to he site. Sometimes this may screw up website database and most probably perform a denial of service on the site as well.
 
 Use on a disposable test site!
 
@@ -48,8 +48,6 @@ The scanner has the following drawbacks presently:
 #### Requirements:
 
 - mechanize
-- urllib
-- urllib2
 - requests
 - bs4
 - lxml
@@ -81,8 +79,7 @@ https://examplesite.com
 ➲ Report to owners if any bugs found... ; )
 
 #### Version:
-
-- v1.1.0
+- [x] Latest release - v1.2.0
 
 #### To Do's:
 - Associate multithreading for the better.
