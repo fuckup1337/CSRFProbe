@@ -31,6 +31,9 @@ The typical flow of this scanner is :-
 
 <img src="https://i.imgur.com/aLD1GDD.png" />
 
+#### Version:
+v1.0.0
+
 #### Warnings:
 Do not use this tool on a live site!
 
@@ -48,8 +51,6 @@ The scanner has the following drawbacks presently:
 #### Requirements:
 
 - mechanize
-
-
 - requests
 - bs4
 - lxml
