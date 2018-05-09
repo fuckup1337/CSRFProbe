@@ -1,3 +1,11 @@
-This is just a init to this folder.
 
-DO NOT DELETE THIS FOLDER!!!
+  L O G F I L E
+ ===============
+
+* Purpose : This file is just a init to this folder.
+
+* WARNING : DO NOT DELETE THIS FOLDER!!!
+		Or the program will not function properly!
+
+* Use : It is in this folder that some temporary files will be created and stored during the execution of the program. The files will 			automatically be deleted after the program finishes its complete execution.
+
