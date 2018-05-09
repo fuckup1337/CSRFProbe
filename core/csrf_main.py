@@ -2,20 +2,18 @@
 #coding: utf-8
 
 #-:-:-:-:-:-:-::-:-:#
-#    XSRF Probe     #
+#    CSRF Probe     #
 #-:-:-:-:-:-:-::-:-:#
 
 #Author: the-Infected-Drake (@_tID)
-#This module requires XSRF-Probe
-#https://github.com/the-Infected-Drake/XSRF-Probe
+#This module requires CSRFProbe
+#https://github.com/the-Infected-Drake/CSRFProbe
 
 from globalvars import *
 from impo import *
 import sys
 sys.path.append('modules/')
-from Crawler_Handler import *
-from Form_Debugger import *
-from Uri_Checker import *
+from in_vars import *
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 def csrf_main():
@@ -38,8 +36,8 @@ def csrf_main():
 	init1 = web
 	form = Form_Debugger()
 
-	bs1=BeautifulSoup(form1).findAll('form',action=True)[0]
-	bs2=BeautifulSoup(form2).findAll('form',action=True)[0]
+	bs1=BeautifulSoup(form1, "lxml").findAll('form',action=True)[0]
+	bs2=BeautifulSoup(form2, "lxml").findAll('form',action=True)[0]
 
 	action = init1
 
@@ -74,8 +72,10 @@ def csrf_main():
 						r2 = request(url, action, result, resp2)
 
 						if(len(csrf)>0):
+
 							if not re.search(csrf, r2):
 								print G+ '[+] Looks like we got a CSRF vulnerability on '+O+url+G+'!\n'
+
 								try:
 								    if m['name']:
 									print R+'\n +---------+'
@@ -101,10 +101,12 @@ def csrf_main():
 						o2 = resp2.open(url).read()
 
 						try:
-							form2 = getAllForms(BeautifulSoup(o2))[i]
+							form2 = getAllForms(BeautifulSoup(o2, 'lxml'))[i]
 
 						except IndexError:
-							print R+' [-] Form Error'
+							print R+' [-] Form returned a Error!'
+							time.sleep(0.5)
+							print G+' [+] Moving on...'
 							continue;
 
 						print GR+' [*] Preparing form inputs...'
@@ -145,6 +147,7 @@ def csrf_main():
 
 								print O+' [+] Code : '+W+urllib.urlencode(result)
 								print ''
+
 						except:
 							pass
 

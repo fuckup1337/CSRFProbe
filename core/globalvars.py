@@ -2,12 +2,12 @@
 #coding: utf-8
 
 #-:-:-:-:-:-:-::-:-:#
-#    XSRF Probe     #
+#    CSRF Probe     #
 #-:-:-:-:-:-:-::-:-:#
 
 #Author: the-Infected-Drake (@_tID)
-#This module requires XSRF-Probe
-#https://github.com/the-Infected-Drake/XSRF-Probe
+#This module requires CSRFProbe
+#https://github.com/the-Infected-Drake/CSRFProbe
 
 global web
 global form1

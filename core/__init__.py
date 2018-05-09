@@ -9,16 +9,7 @@
 #This module requires CSRFProbe
 #https://github.com/the-Infected-Drake/CSRFProbe
 
-from colors import *
+import sys
+sys.path.append('/modules')
 
-def inputin():
-
-	web = raw_input(C+' [$] Enter target address :> '+G)
-
-	if 'http' not in web:
-		web = 'http://' + web
-	if web.endswith('/'):
-		return web
-	else:
-		web = web + '/'
-		return web
+pass
