@@ -9,6 +9,7 @@ The typical flow of this scanner is :-
 - Finds all types of forms present on the each page.
 - Hunts out hidden as well as visible parameter values.
 - Submits each form with normal tokens & parameter values.
+- If multiple parameters are there, then it tests for each one keeping other values constant and this goes on recursively.
 - Generates random token strings and sets parameter values.
 - Submits each form with the crafted tokens.
 - Finds out if the tokens are sufficiently protected.
